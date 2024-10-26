@@ -2,10 +2,7 @@
 
 
 html{
-    width: 1440px;
-    height: 2491px;
-    margin-top: -225px;
-    margin-left: 709px;
+    font-family: 'Raleway:ital', sans-serif;
 }
 
 
@@ -21,18 +18,66 @@ body{
 
 /* Cabeçalho */
 header{
-    width: 1440px;
-    height: 605px;
+    width: 100%;
+    height: 600px;
     border-bottom: solid #33A8DB 1px;
-
-    background-size: 1440px 732px;
-    margin-top: -125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header{
+    background-size : cover;
+    background-repeat: no-repeat;
+    border-bottom: solid 1px #33A8DB;
+    background-color: rgba(4, 39, 54, 0.2);
     background-image: url(/assets/images/banner.png);
-    background-color: #33A8DB;
-    opacity: 10%;
+}
+
+.banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.banner-content h1{
+   text-transform: uppercase;
+   text-align: center;
+   width: 434px;
+   height: 47px;
+   font-weight: 900;
+   font-size: 33px;
+   line-height: 47px;
+   color: #33A8DB;
+   letter-spacing: 3px;
+}
+
+.banner-content p {
+    color: #FFFFFF;
+    width: 520px;
+    height: 46px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.banner-content button{
+    border: solid 2px #33A8DB;
+    width: 350px;
+    height: 60px;
+    background: transparent;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #33A8DD;
+    text-transform: uppercase;
 }
 
 
@@ -41,25 +86,141 @@ header{
 
 /* Conteúdo */
 main{
-    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #course-content{
-    width: 792px;
-    height: 325px;
-    margin-top: 723px;
-    margin-left: 324px;
-    gap: 24px;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#course-content h2 {
+#course-content p {
+    margin-top: 0;
+    color: #FFFFFF;
+    width: 792px;
+    height: 38px;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#course-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #33A8DB;
     width: 477px;
     height: 38px;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    letter-spacing: 19%;
+    letter-spacing: 5px;
+}
+
+.modules-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.module{
+    width: 450px;
+    height: 19px;
+    border-radius: 57px;
+    border: solid 1px #33A8DB;
+    padding: 16px 127px 16px 127px;
+    gap: 10px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.module span{
+    width: 281px;
+    height: 19px;
     color: #33A8DB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+
+}
+
+
+
+#transform-world{
+    border-top: solid 1px #33A8DD;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 363px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/images/woman-code.png);
+    background-size: 1440px auto;
+    background-position: center;
+}
+
+#transform-world p{
+    width: 244px;
+    height: 141px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    text-shadow: 4px 1px 1px #33A8DB;
+    margin-right: 850px;
+}
+
+#professional-challenges{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: solid 0.2px #33A8DB;
+}
+
+#professional-challenges h2{
+    color: #33A8DB;
+    width: 746px;
+    height: 76px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 19%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+#professional-challenges img{
+    width: 659px;
+    height: 429px;
+}
+
+
+#professional-challenges p {
+    width: 792px;
+    height: 76px;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 100px;
 }
 
 /* Conteúdo */
@@ -70,30 +231,23 @@ main{
 /* Rodapé */
 
 footer{
+    background: linear-gradient(to top, rgba(51,168,219,0.1), #252525 60%);
+    border-top: solid 0.2px #33A8DB;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1440px;
-    height: 170px;
-    margin-top: 2321px;
-    border:solid 1px #33A8DB;
+    flex-direction: column;
 }
 
 .dio-logo{
-    width: 310px;
-    height: 44px;
-    margin-top: 59px;
-    margin-left: 565px;
+    margin-top: 50px;
+    padding: 0;
 }
 
 footer p {
-    width: 259px;
-    height: 19px;
-    margin-top: 113px;
-    margin-left: 591px;
-    font-weight: 400;
+    color: #FFFFFF;
     font-size: 16px;
-    line-height: 19px;
+    font-weight: 500 ;
     text-align: center;
 }
 
